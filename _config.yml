@@ -15,10 +15,7 @@ theme: minima
 # The actual visibility of the nav bar links is influenced by the event_status
 # and registration_status flags below
 header_pages:
-  - registration.md
-  - agenda.md
   - projects.md
-  - videos-slides.md
   - resources.md
   - about.md
 
@@ -46,10 +43,6 @@ twitter:
   card: summary_large_image
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/advert.png
   - scope:
       path: ""
       type: "projects"
