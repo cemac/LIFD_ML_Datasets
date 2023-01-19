@@ -1,0 +1,61 @@
+title: Leeds Institute of Fluid Dynamics Machine Learning Datasets
+nav_title: Template Hack<span class="hide-very-narrow">athon</span><br><small><span class="hide-very-narrow">with</span> University of Leeds</small>
+
+author: University of Leeds
+mailbox_address: ...@leeds.ac.uk
+
+description:
+ description .....
+
+url: "https://ceamc.github.io/LIFD_ML_Datasets"
+github_repo: cemac/LIFD_ML_Datasets
+
+theme: minima
+
+# The actual visibility of the nav bar links is influenced by the event_status
+# and registration_status flags below
+header_pages:
+  - registration.md
+  - agenda.md
+  - projects.md
+  - videos-slides.md
+  - resources.md
+  - about.md
+
+event_status: demo
+
+# Open and close the registration form
+#   soon = Registration has not yet opened
+#   open = Registration form is open
+# closed = Registration form is now closed
+#  (demo = show all pages to demonstrate the template)
+registration_status: closed
+
+# Remove ".html" from default permalinks
+permalink: pretty
+
+# (See default layout below)
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Social media links
+# (See default layout below)
+twitter:
+  card: summary_large_image
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/advert.png
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Simplify tables of contents
+kramdown:
+  toc_levels: "2,3"
